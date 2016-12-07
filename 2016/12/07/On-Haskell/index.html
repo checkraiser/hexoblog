@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="/asset/guolin.png"/>
+        <link rel="alternate" type="application/rss+xml" title="Truong Hoang Dung" href="/atom.xml">
+        <link rel="canonical" href="http://guolinn.com/">
+
+        <title>On Haskell | Truong Hoang Dung</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/crisp.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.3.2/echarts.common.min.js" integrity="sha256-xfuIOAVUrD3OA4lHoY+yw1DXr/TjJ9jZjcGxWHo0VaU=" crossorigin="anonymous"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </head>
+    
+		<body class="post-template">
+	
+
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="header">
+            <a id="logo" href="/"><img src="/asset/guolin.png" alt="Truong Hoang Dung" /></a>
+            <h6><a href="/about">About</a></h6>
+<h6>Categories:</h6>
+<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li></ul>            
+        </header>
+
+        <main id="content">
+        
+
+<article class="post">
+  
+  December 7, 2016
+  
+    <span class="taglist">  &middot; 
+    
+    
+      <a href='/tags/Haskell/'>Haskell</a> 
+    
+      <a href='/tags/Functional-Programming/'>Functional Programming</a> 
+    
+    </span>
+  
+
+  <h1 class="post-title">On Haskell</h1>
+  <section class="post-content article-entry">
+    <p>This is a Test<br><img src="/diagrams/On-Haskell-diagram-0.png" alt=""></p>
+<p><img src="/diagrams/On-Haskell-diagram-1.png" alt=""></p>
+<p><img src="/diagrams/On-Haskell-diagram-2.png" alt=""><br><div id="echarts6322" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6322'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data:['利润', '支出', '收入']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    yAxis : [
+        {
+            type : 'category',
+            axisTick : {show: false},
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    series : [
+        {
+            name:'利润',
+            type:'bar',
+            itemStyle : {
+                normal: {
+                    label: {show: true, position: 'inside'}
+                }
+            },
+            data:[200, 170, 240, 244, 200, 220, 210]
+        },
+        {
+            name:'收入',
+            type:'bar',
+            stack: '总量',
+            itemStyle: {
+                normal: {
+                    label : {show: true}
+                }
+            },
+            data:[320, 302, 341, 374, 390, 450, 420]
+        },
+        {
+            name:'支出',
+            type:'bar',
+            stack: '总量',
+            itemStyle: {normal: {
+                label : {show: true, position: 'left'}
+            }},
+            data:[-120, -132, -101, -134, -190, -230, -210]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script></p>
+
+  </section>
+  <footer class="post-footer">  
+    <!--
+    <section class="author">
+      <h4>Truong Hoang Dung</h4>
+      <p></p>
+    </section>
+    -->
+  </footer>
+</article>
+
+<nav class="pagination" role="pagination">  
+  
+  <span class="page-number">•</span>
+  
+  <a class="older-posts" href="/2016/12/07/Talents-vitual-to-programmers/">
+      <!--Talents vitual to programmers--> next →
+  </a>
+    
+  <h4>Related Posts:</h4>
+  <ul class="related-posts"><li class="related-posts-item"><a href="/2016/12/07/Talents-vitual-to-programmers/">Talents vitual to programmers</a></li>
+</nav>
+
+<!-- Begin Comments Code -->
+<div id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'guolinn'; // required: replace example with your shortname
+      var disqus_identifier = '';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+<!-- End Comments Code -->
+
+
+
+        </main>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+</html>
+
+
